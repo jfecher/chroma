@@ -8,4 +8,7 @@ require (
 	github.com/stretchr/testify v1.7.0
 )
 
-replace github.com/alecthomas/chroma => /home/rndmprsn/Programs/chroma
+replace (
+	github.com/alecthomas/chroma v0.9.4 => /home/rndmprsn/Programs/chroma
+	github.com/alecthomas/chroma => /home/rndmprsn/Programs/chroma
+)
