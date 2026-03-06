@@ -22,7 +22,7 @@ func anteRules() Rules {
 			{`\s+`, Text, nil},
 			{`//.*$`, CommentSingle, nil},
 			{`/\*`, CommentMultiline, Push("comment")},
-			{`\b(if|else|import|with|in|do|inherit|export|as|hiding|extern|given|can|forall|effect|handler|handle|resume|continue|return|fn|mut|shared|own|owned|opaque|impl|match|trait|module|recur|type|and|loop|do|then|not|or)(?!\')\b`, Keyword, nil},
+			{`\b(if|else|is|for|derive|local|implicit|stable|imm|import|with|in|do|inherit|export|as|hiding|extern|given|can|forall|effect|handler|handle|resume|continue|return|fn|mut|shared|own|owned|opaque|impl|match|trait|module|recur|type|and|loop|do|then|not|or)(?!\')\b`, Keyword, nil},
 			{`(true|false)\b`, KeywordConstant, nil},
 			{`'[^\\]'`, LiteralStringChar, nil},
 			{`^[_\p{Ll}][\w\']*`, NameFunction, nil},
